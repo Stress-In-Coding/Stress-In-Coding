@@ -34,3 +34,21 @@ college.college_dean = "sir. Edilberto Ona"
 college.programs = "ACS, SITE, ESSA, YBA, MBS, "
 college.location = "College of Science Building"
 college.display_info()
+
+
+class CSG:
+
+   def __init__(self, officer_name, officer_id, position):
+       self.officer_name = officer_name
+        self.officer_id = officer_id
+       self.position = position
+
+   def display_officer_details(self):
+       print(f"Officer Name: {self.officer_name}")
+        print(f"Officer ID: {self.officer_id}")
+        print(f"Position: {self.position}")
+Create a CSG object
+officer = CSG(" Aneza Jamion", "2022-8-0050", "Assistant Secretary")
+
+# Display officer details
+officer.display_officer_details()
