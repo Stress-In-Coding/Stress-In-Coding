@@ -50,5 +50,18 @@ class CSG:
 Create a CSG object
 officer = CSG(" Aneza Jamion", "2022-8-0050", "Assistant Secretary")
 
+class Faculty:
+    def __init__(self, prof_name,instructor_course,department):
+        self.prof_name = prof_name
+        self.instructor_course = instructor_course
+        self.department = department
+        self.block = 0
+    def assign(self,block):
+        self.block = block
+
+prof = Faculty("KAE ELAURIA","Object-Oriented Programming","COMPTER SCIENCE")
+prof.assign(" BLOCK2")
+print(f"Professor {prof.prof_name} of {prof.block} instructor of {prof.instructor_course}")
+
 # Display officer details
 officer.display_officer_details()
